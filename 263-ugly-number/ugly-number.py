@@ -20,5 +20,4 @@ class Solution(object):
                     diviseurs.append(div)
                 if div != n // div and ( n // div) % 2 != 0 and ( n // div) % 3 != 0 and ( n // div) % 5 != 0:
                         diviseurs.append(n // div)
-        print(diviseurs)
         return (diviseurs in d )
