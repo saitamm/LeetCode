@@ -13,7 +13,6 @@ class Solution(object):
         d = [[2], [2, 3],[2, 5], [2, 3, 5], [3],[3, 5], [5] ]
         for div in range(2, int(math.sqrt(n)) + 1):
             if (n % div == 0):
-                print(div)
                 if div == 2 or div == 3 or div ==  5:
                     diviseurs.append(div)
                 if div % 2 != 0 and div % 3 != 0 and div % 5 != 0:
