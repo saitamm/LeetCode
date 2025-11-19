@@ -23,9 +23,6 @@ class Solution(object):
             while idx + pos < len(nums) and nums[idx+pos] == target :
                 index[1] = pos + idx
                 idx+=1
-            return index
-            print(index[0], "   " , index[1])
-        
         return (index)
             
         
