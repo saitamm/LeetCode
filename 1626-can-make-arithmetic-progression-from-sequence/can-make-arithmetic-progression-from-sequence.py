@@ -4,13 +4,12 @@ class Solution(object):
         :type arr: List[int]
         :rtype: bool
         """
-        left = 0
-        arr_sort = sorted(arr)
-        expect = -1
+        arr.sort()
+        expect = arr[1]-arr[0]
+        left = 1
         while left < len(arr)-1 :
-            if expect == -1:
-                expect = arr_sort[left+1] - arr_sort[left]
-            if  arr_sort[left+1] - arr_sort[left]  != expect:
+            current = arr[left+1] - arr[left]
+            if  (current) != expect:
                 return (False)
             left+=1
         return (True)
