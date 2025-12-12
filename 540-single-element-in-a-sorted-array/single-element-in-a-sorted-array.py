@@ -8,7 +8,6 @@ class Solution(object):
         high = len(nums)-1
         while True:
             mid = low + (high -low)/2
-            print(mid , low, high)
             if mid == 0 or mid ==  len(nums)-1 :
                 return nums[mid]
             if mid % 2 == 0 :
