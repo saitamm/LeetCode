@@ -7,10 +7,7 @@ class Solution(object):
         bol = []
         bol.append('T')
         for i in range(0,len(arr)-1):
-            if arr[i] <= arr[i+1]:
-                bol.append('T')
-            else :
-                bol.append('F')
+            if arr[i] > arr[i+1]:
                 return(i)
         return (-1)
         
