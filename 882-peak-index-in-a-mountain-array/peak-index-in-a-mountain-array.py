@@ -4,8 +4,15 @@ class Solution(object):
         :type arr: List[int]
         :rtype: int
         """
-        for i in range(0,len(arr)-1):
-            if arr[i] > arr[i+1]:
-                return(i)
-        return (-1)
+        low = 0
+        high = len(arr) -1
+        idx = 0
+        while high >= low :
+            mid = (low + high)/2
+            if arr[mid] <= arr[mid+1]:
+                low = mid + 1
+            else :
+                high = mid -1
+                idx = mid
+        return (idx)
         
