@@ -23,5 +23,4 @@ class Solution(object):
                     end = right +1
                 left -= 1
                 right += 1
-        print(s[start:end])
         return s[start:end]
