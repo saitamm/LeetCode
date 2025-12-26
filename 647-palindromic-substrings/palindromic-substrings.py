@@ -11,12 +11,8 @@ class Solution(object):
             while left >= 0 and s[left] == s[i]:
                 res += 1
                 left -= 1
-            while left >= 0 and right < len(s) :
-                if s[left] == s[right]:
-                    res += 1
-                else :
-                    break
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                res += 1
                 left -= 1
                 right += 1
-
         return res
