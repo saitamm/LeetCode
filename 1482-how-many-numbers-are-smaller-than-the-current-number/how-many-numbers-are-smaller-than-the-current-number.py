@@ -11,5 +11,4 @@ class Solution(object):
                     count[j]+=1
                 elif (nums[i] > nums[j]):
                     count[i]+=1
-        print(count)
         return (count)
