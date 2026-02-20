@@ -15,14 +15,18 @@ class Solution(object):
         l1 = l1.next
         l2 = l2.next
         head = result
-        while l1 and l2:
-            number = l1.val + l2.val + rang
+        while l1 or l2:
+            number1 = l1.val if l1 else 0
+            number2 = l2.val if l2 else 0
+            number = number1 + number2 + rang
             newNode = ListNode(number  % 10)
             head.next = newNode
             head = head.next
             rang = number / 10
-            l1 = l1.next
-            l2 = l2.next
+            if l1 :
+                l1 = l1.next
+            if l2 :
+                l2 = l2.next
         while l1 :
             number = l1.val + rang
             newNode = ListNode(number  % 10)
@@ -37,7 +41,6 @@ class Solution(object):
             head = head.next
             rang = number / 10
             l2 = l2.next
-        print(rang)
         if (rang):
             newNode = ListNode(rang)
             head.next = newNode
