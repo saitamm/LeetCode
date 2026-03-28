@@ -4,6 +4,8 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        return n//5 + self.trailingZeroes(n//5) if n else 0
+        if n == 0:
+            return 0
+        return n//5 + self.trailingZeroes(n//5)
 
         
