@@ -11,6 +11,4 @@ class Solution(object):
                 Even += piles[i]
             else :
                 Odd += piles[i]
-        print("Even  = ", Even )
-        print("Odd = ",  Odd)
-        return True
+        return Odd != Even
